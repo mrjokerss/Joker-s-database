@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background: #000;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="button">点击将div变成红色</button>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+</body>
+<script>
+    var div = document.querySelectorAll('div')
+    var one = document.getElementById('one')
+    var two = document.getElementById('two')
+    var three = document.getElementById('three')
+    var button = document.querySelector('#button').onclick = function () {
+        one.style.background = "red"
+        two.style.background = "red"
+        three.style.background = "red"
+    }
+    console.log(button);
+
+
+</script>
+
+
+</html>
